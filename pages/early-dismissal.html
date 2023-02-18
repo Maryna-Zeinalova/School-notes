@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Early dismissal</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Early dismissal</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More notes..
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./absence-note.html"
+                    >Absence note</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./tardy-note.html"
+                    >Being late</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div class="wrapper">
+      <main class="main">
+
+        <section class="form">
+          <h3 class="subtitle">Teacher</h3>
+            <div class="block">
+              <select class="form-select form-select-sm teacher-gender" aria-label="Default select example" name="teacher-gender">
+                <option selected>Mr.</option>
+                <option value="1">Mrs.</option>
+                <option value="2">Ms.</option>              
+              </select>
+              <input class="form-control form-control-sm teacher-name" type="text" placeholder="Enter teacher's name" aria-label="default input example" name="teacher-name">
+            </div>            
+  
+            <h3 class="subtitle">Child</h3>
+            <div class="block">
+              <select class="form-select form-select-sm child-gender" aria-label="Default select example" name="child-gender">
+                <option selected>Son</option>
+                <option value="1">Daughter</option>              
+              </select>
+              <input class="form-control form-control-sm child-name" type="text" placeholder="Enter your child's name" aria-label="default input example" name="child-name">
+            </div>
+
+            <div class="block dismissal-time">
+              <div class="date">
+                <h3 class="subtitle">Date</h3>
+              <input
+              type="date"
+              name="date"
+              value="2023-02-18"
+              min="2023-02-01"
+              max="2023-12-31"
+            />
+              </div>
+              <div class="time">
+                <h3 class="subtitle">Pick up time</h3>
+                <input type="time" name="time">
+              </div>
+
+              <div class="being-back">
+                <h3 class="subtitle">
+                  Returning
+                </h3>
+                <select class="form-select form-select-sm back-to-school" aria-label="Default select example" name="returning">
+                  <option selected>will be returning to school</option>
+                  <option value="1">will not be returning to school</option>              
+                </select>
+              </div>
+            </div>
+  
+            <h3 class="subtitle">Parent</h3>
+            <div class="block">
+              <select class="form-select form-select-sm parent-gender" aria-label="Default select example" name="parent-gender">
+                <option selected>Mother</option>
+                <option value="1">Father</option>              
+              </select>
+              <input class="form-control form-control-sm parent-name" type="text" placeholder="Enter parent's name" aria-label="default input example" name="parent-name">
+            </div>
+  
+            <h3 class="subtitle">Reason</h3>
+            <select class="form-select form-select-sm" aria-label=".form-select-lg example" name="reason">
+              <option selected>family reasons</option>
+              <option value="1">bad weather conditions</option>
+              <option value="2">seeing a doctor</option>
+              <option value="3">alien invasion</option>
+            </select>  
+          </section>
+
+        <section class="note-content">
+        </section>
+      </main>      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../script/early-dismissal.js"></script>
+</body>
+</html>
